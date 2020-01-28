@@ -1,7 +1,6 @@
 ! Disable capslock
 clear Lock
 keycode 66 = Mode_switch
-remove mod4 = Hyper_L
 keysym j = j J Left
 keysym l = l L Right
 keysym k = k K Down
