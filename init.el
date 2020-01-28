@@ -15,7 +15,10 @@
 ;; Remove trailing whitespace when saving
 (add-hook 'write-file-hooks 'delete-trailing-whitespace)
 
-;; TODO: Add windmove-intuitively
+;; Add windmove-intuitively
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+
 ;; TODO: Add packages automatic installer thingy
 ;; TODO: Disable the automatic file finder thing
 
