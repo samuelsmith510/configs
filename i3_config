@@ -174,7 +174,7 @@ bar {
 
 # my additions
 bindsym $mod+l exec "i3lock -c 000000"
-bindsym $mod+e exec "emacsclient -c" # TODO make this emacs client
-bindsym $mod+c exec "chromium" 
+bindsym $mod+e exec "emacsclient -c"
+bindsym $mod+c exec "chromium"
 bindsym $mod+k exec "keepass"
 # TODO: Start off workspace 1 with emacs and workspace 2 with chromium
