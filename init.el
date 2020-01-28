@@ -1,19 +1,25 @@
-(menu-bar-mode -1) 
-(toggle-scroll-bar -1) 
-(tool-bar-mode -1) 
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+(tool-bar-mode -1)
 
 (require 'package)
-(add-to-list 'package-archives 
+(add-to-list 'package-archives
     '("MELPA" .
       "http://melpa.milkbox.net/packages/"))
 (package-initialize)
 
 
-;; TODO: Add font changes
+;; Font size and preference
+(set-frame-font "Source Code Pro 12" nil t)
+
+;; Remove trailing whitespace when saving
+(add-hook 'write-file-hooks 'delete-trailing-whitespace)
+
 ;; TODO: Add windmove-intuitively
 ;; TODO: Add packages automatic installer thingy
 ;; TODO: Disable the automatic file finder thing
-;; TODO: Remove trailing whitespace when saving
+
+
 
 ;; Maaaaaaaaagit
 (require 'magit)
