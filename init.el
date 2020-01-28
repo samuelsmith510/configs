@@ -9,6 +9,11 @@
 (package-initialize)
 
 
+;; TODO: Add font changes
+;; TODO: Add windmove-intuitively
+;; TODO: Add packages automatic installer thingy
+;; TODO: Disable the automatic file finder thing
+
 ;; Maaaaaaaaagit
 (require 'magit)
 (global-set-key (kbd "<f9>") 'magit-status)
