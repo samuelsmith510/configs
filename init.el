@@ -1,6 +1,10 @@
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
 (tool-bar-mode -1)
+(show-paren-mode 1)
+(line-number-mode 1)
+(setq ring-bell-function 'ignore)
+(setq inhibit-startup-screen 1)
 
 (require 'package)
 (add-to-list 'package-archives
@@ -21,7 +25,8 @@
 
 ;; TODO: Add packages automatic installer thingy
 ;; TODO: Disable the automatic file finder thing
-
+;; TODO: Add more hotkeys for rgrep, C-u M-x shell, etc.
+;; TODO: Get a good go-to-definition install
 
 
 ;; Maaaaaaaaagit
@@ -32,6 +37,29 @@
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
 (ido-mode 1)
+
+
+;; Don't ever stop
+(global-unset-key (kbd "C-x C-z"))
+(global-unset-key (kbd "C-z"))
+
+;; Passwords
+(setq password-cache-expiry nil)
+
+;; SMEX - package for ido-style completions for M-x commands
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+
+;; Disable stupid beeps
+(setq ring-bell-function 'ignore)
+
+;; Column width
+(setq-default fill-column 80)
+
 
 
 (custom-set-variables
