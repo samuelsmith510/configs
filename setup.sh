@@ -19,8 +19,13 @@ ln -s `readlink -f bashrc` ~/.bashrc
 # Install xmodmap configuration
 ln -s `readlink -f xmodmap` ~/.Xmodmap
 
+# Install git configuration
+ln -s `readlink -f gitignore` ~/.gitignore_global
+
+
 # Apply configs
 source ~/.bashrc
 i3-msg restart
+git config --global core.excludesfile ~/.gitignore_global
 
 echo "Setup applied successfully"
