@@ -16,4 +16,11 @@ ln -s `readlink -f i3_config` ~/.config/i3/config
 # Install bash configuration
 ln -s `readlink -f bashrc` ~/.bashrc
 
+# Install xmodmap configuration
+ln -s `readlink -f xmodmap` ~/.Xmodmap
+
+# Apply configs
+source ~/.bashrc
+i3-msg restart
+
 echo "Setup applied successfully"
