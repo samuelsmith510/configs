@@ -13,6 +13,7 @@
 ;; TODO: Add windmove-intuitively
 ;; TODO: Add packages automatic installer thingy
 ;; TODO: Disable the automatic file finder thing
+;; TODO: Remove trailing whitespace when saving
 
 ;; Maaaaaaaaagit
 (require 'magit)
