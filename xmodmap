@@ -1,4 +1,26 @@
-# TODO Add the following keyboard xmodmaps
-# Disable capslock
-# Function keys with capslock modifier
-# Page Up/Down, Home/End, Arrow Keys with capslock modifier
+! Disable capslock
+clear Lock
+keycode 66 = Mode_switch
+remove mod4 = Hyper_L
+keysym j = j J Left
+keysym l = l L Right
+keysym k = k K Down
+keysym i = i I Up
+keysym u = u U Prior
+keysym o = o O Next
+keysym h = h H Home
+keysym n = n N End
+
+! Function keys with capslock modifier
+keysym 1 = 1 exclam F1
+keysym 2 = 2 at F2
+keysym 3 = 3 numbersign F3
+keysym 4 = 4 dollar F4
+keysym 5 = 5 percent F5
+keysym 6 = 6 asciicircum F6
+keysym 7 = 7 ampersand F7
+keysym 8 = 8 asterisk F8
+keysym 9 = 9 parenleft F9
+keysym 0 = 0 parenright F10
+keysym minus = minus underscore F11
+keysym equal = equal plus F12
