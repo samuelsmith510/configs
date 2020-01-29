@@ -1,7 +1,11 @@
 export ALTERNATE_EDITOR=""
 export EDITOR="emacsclient -t"                  # $EDITOR opens in terminal
 export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI mode
+
+# Shortcuts for the lazy
 alias fakepython="export PATH=/home/user/fakepython:$PATH"
+alias jtags="rm -f tags && ctags --languages=java -e -R ."
+alias atags="rm -f tags && atags -e -R ."
 
 if [ "$HOSTNAME" = "waltherson" ]
 then
