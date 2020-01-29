@@ -35,8 +35,6 @@ bindsym $mod+Return exec i3-sensible-terminal
 # dock/undock
 bindsym $mod+F7 exec /home/user/bin/toggledock.sh
 
-# kill focused window
-bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -182,3 +180,9 @@ bindsym $mod+k exec "keepass"
 # running with it
 bindsym $mod+o focus left
 # TODO: Start off workspace 1 with emacs and workspace 2 with chromium
+
+# Simpler way to kill windows since Mod+Shift+q is hard to hit
+bindsym $mod+q kill
+
+# Simpler way to restart since $mod+shift+r is hard
+bindsym $mod+r restart
