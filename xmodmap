@@ -23,3 +23,6 @@ keysym 9 = 9 parenleft F9
 keysym 0 = 0 parenright F10
 keysym minus = minus underscore F11
 keysym equal = equal plus F12
+
+! TODO: Add the tick modifier when pressing caps+escape
+! TODO: Add the tilde modifier when pressing caps+shift+escape
