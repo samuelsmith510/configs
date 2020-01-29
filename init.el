@@ -30,7 +30,7 @@
     (package-install pkg)))
 
 ;; Font size and preference
-(set-frame-font "Source Code Pro 12" nil t)
+(set-frame-font "Source Code Pro 16" nil t)
 
 ;; Remove trailing whitespace when saving
 (add-hook 'write-file-hooks 'delete-trailing-whitespace)
