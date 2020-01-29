@@ -39,7 +39,6 @@
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
-;; TODO: Add packages automatic installer thingy
 ;; TODO: Disable the automatic file finder thing
 ;; TODO: Add more hotkeys for rgrep, C-u M-x shell, etc.
 ;; TODO: Get a good go-to-definition install
@@ -48,6 +47,13 @@
 ;; Maaaaaaaaagit
 (require 'magit)
 (global-set-key (kbd "<f9>") 'magit-status)
+
+;; Quality of Life
+(global-set-key (kbd "<f5>") 'rgrep)
+(global-set-key (kbd "<f1>")
+ (lambda () (interactive)
+   (let ((current-prefix-arg 4))
+     (call-interactively #'shell))))
 
 ;; ido
 (setq ido-enable-flex-matching t)

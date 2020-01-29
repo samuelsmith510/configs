@@ -3,7 +3,10 @@
 # Clear out all other previous configs
 rm -f ~/.emacs.d/init.el
 rm -f ~/.config/i3/config
+rm -f ~/.Xmodmap
+rm -f ~/.gitignore_global
 rm -f ~/.bashrc
+rm -f ~/.xinitrc
 
 # Install Emacs config and directory
 mkdir -p ~/.emacs.d
@@ -22,6 +25,8 @@ ln -s `readlink -f xmodmap` ~/.Xmodmap
 # Install git configuration
 ln -s `readlink -f gitignore` ~/.gitignore_global
 
+# Install xinitrc
+ln -s `readlink -f xinitrc` ~/.xinitrc
 
 # Apply configs
 source ~/.bashrc
