@@ -52,16 +52,16 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# bindsym $mod+Left focus left
+# bindsym $mod+Down focus down
+# bindsym $mod+Up focus up
+# bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+# bindsym $mod+Shift+j move left
+# bindsym $mod+Shift+k move down
+# bindsym $mod+Shift+l move up
+# bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -177,4 +177,8 @@ bindsym $mod+l exec "i3lock -c 000000"
 bindsym $mod+e exec "emacsclient -c"
 bindsym $mod+c exec "chromium"
 bindsym $mod+k exec "keepass"
+
+# Hack for focus "other", just choose a direction and keep
+# running with it
+bindsym $mod+o focus left
 # TODO: Start off workspace 1 with emacs and workspace 2 with chromium
