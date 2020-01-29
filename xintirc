@@ -1,0 +1,3 @@
+xmodmap ~/.Xmodmap
+emacs --daemon
+exec i3
