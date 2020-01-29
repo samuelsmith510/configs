@@ -46,14 +46,17 @@
 
 ;; Maaaaaaaaagit
 (require 'magit)
-(global-set-key (kbd "<f9>") 'magit-status)
+
 
 ;; Quality of Life
-(global-set-key (kbd "<f5>") 'rgrep)
 (global-set-key (kbd "<f1>")
  (lambda () (interactive)
    (let ((current-prefix-arg 4))
      (call-interactively #'shell))))
+(global-set-key (kbd "<f2>") 'find-name-dired)
+(global-set-key (kbd "<f6>") 'compile)
+(global-set-key (kbd "<f5>") 'rgrep)
+(global-set-key (kbd "<f9>") 'magit-status)
 
 ;; ido
 (setq ido-enable-flex-matching t)
