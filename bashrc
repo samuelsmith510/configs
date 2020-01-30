@@ -19,4 +19,5 @@ then
    alias clear_yubi="ssh-add -e /usr/lib/pkcs11/opensc-pkcs11.so"
    alias reyubi="clear_yubi && load_yubi && ssh-add -L"
    alias ocna="sudo ~/projects/personal-bitbucket/connect-ocna/ocnaconnect.sh"
+   alias parfaitmvn="mvn clean && mvn oracle.parfait:parfait-maven-plugin:3.1.0:aggregate-translate oracle.parfait:parfait-maven-plugin:3.1.0:aggregate-analyze -DskipTests"
 fi
