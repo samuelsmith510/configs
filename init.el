@@ -44,6 +44,9 @@
 (add-hook 'org-shiftdown-final-hook 'windmove-down)
 (add-hook 'org-shiftright-final-hook 'windmove-right)
 
+;; Automatically turn on auto-fill mode for org
+(add-hook 'org-mode-hook 'turn-on-auto-fill)
+
 
 
 ;; TODO: Disable the automatic file finder thing
@@ -60,6 +63,8 @@
    (let ((current-prefix-arg 4))
      (call-interactively #'shell))))
 (global-set-key (kbd "<f2>") 'find-name-dired)
+(global-set-key (kbd "<f3>") 'org-store-link)
+(global-set-key (kbd "<f4>") 'org-insert-link)
 (global-set-key (kbd "<f6>") 'compile)
 (global-set-key (kbd "<f5>") 'rgrep)
 (global-set-key (kbd "<f9>") 'magit-status)
