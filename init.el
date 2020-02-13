@@ -38,6 +38,13 @@
 ;; Add windmove-intuitively
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
+;; Fix for org mode conflict
+(add-hook 'org-shiftup-final-hook 'windmove-up)
+(add-hook 'org-shiftleft-final-hook 'windmove-left)
+(add-hook 'org-shiftdown-final-hook 'windmove-down)
+(add-hook 'org-shiftright-final-hook 'windmove-right)
+
+
 
 ;; TODO: Disable the automatic file finder thing
 ;; TODO: Add more hotkeys for rgrep, C-u M-x shell, etc.
