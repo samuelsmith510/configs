@@ -6,6 +6,7 @@ export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI mode
 alias fakepython="export PATH=/home/user/fakepython:$PATH"
 alias jtags="rm -f tags && ctags --languages=java -e -R ."
 alias atags="rm -f tags && atags -e -R ."
+alias cctags="rm -f tags && ctags --languages=c -e -R ."
 
 if [ "$HOSTNAME" = "waltherson" ]
 then
