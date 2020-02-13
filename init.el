@@ -47,7 +47,6 @@
 
 
 ;; TODO: Disable the automatic file finder thing
-;; TODO: Add more hotkeys for rgrep, C-u M-x shell, etc.
 ;; TODO: Get a good go-to-definition install
 
 
