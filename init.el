@@ -47,11 +47,7 @@
 ;; Automatically turn on auto-fill mode for org
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
 
-
-
 ;; TODO: Disable the automatic file finder thing
-;; TODO: Get a good go-to-definition install
-
 
 ;; Maaaaaaaaagit
 (require 'magit)
@@ -100,7 +96,22 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (smex magit json-mode))))
+ '(grep-find-ignored-directories
+   (quote
+    ("testing" "test" "SCCS" "RCS" "CVS" "MCVS" ".src" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}")))
+ '(grep-find-ignored-files
+   (quote
+    ("*Test.java" "*Test*" ".#*" "*.o" "*~" "*.bin" "*.lbin" "*.so" "*.a" "*.ln" "*.blg" "*.bbl" "*.elc" "*.lof" "*.glo" "*.idx" "*.lot" "*.fmt" "*.tfm" "*.class" "*.fas" "*.lib" "*.mem" "*.x86f" "*.sparcf" "*.dfsl" "*.pfsl" "*.d64fsl" "*.p64fsl" "*.lx64fsl" "*.lx32fsl" "*.dx64fsl" "*.dx32fsl" "*.fx64fsl" "*.fx32fsl" "*.sx64fsl" "*.sx32fsl" "*.wx64fsl" "*.wx32fsl" "*.fasl" "*.ufsl" "*.fsl" "*.dxl" "*.lo" "*.la" "*.gmo" "*.mo" "*.toc" "*.aux" "*.cp" "*.fn" "*.ky" "*.pg" "*.tp" "*.vr" "*.cps" "*.fns" "*.kys" "*.pgs" "*.tps" "*.vrs" "*.pyc" "*.pyo")))
+ '(jdee-db-option-host "localhost")
+ '(jdee-sourcepath
+   (quote
+    ("/home/user/Projects/oci-bitbucket/ffsw/ffsw-control-plane/api")))
+ '(package-selected-packages (quote (smex magit json-mode)))
+ '(safe-local-variable-values
+   (quote
+    ((whitespace-style face empty tabs lines-tail trailing)
+     (whitespace-line-column . 100)
+     (whitespace-mode t)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
