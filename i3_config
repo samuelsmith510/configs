@@ -174,6 +174,8 @@ bindsym $mod+l exec "i3lock -c 000000"
 bindsym $mod+e exec "emacsclient -c"
 bindsym $mod+c exec "chromium"
 bindsym $mod+k exec "keepass"
+bindsym $mod+a exec "termite -e alsamixer"
+
 
 # Hack for focus "other", just choose a direction and keep
 # running with it
