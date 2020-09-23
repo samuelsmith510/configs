@@ -1,4 +1,4 @@
-(package-initialize)
+(setq default-frame-alist '((font . "Source Code Pro 16")))
 
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
@@ -28,9 +28,6 @@
 (dolist (pkg my-packages)
   (unless (package-installed-p pkg)
     (package-install pkg)))
-
-;; Font size and preference
-(set-frame-font "Source Code Pro 16" nil t)
 
 ;; Remove trailing whitespace when saving
 (add-hook 'write-file-hooks 'delete-trailing-whitespace)
